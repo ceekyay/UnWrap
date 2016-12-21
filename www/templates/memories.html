@@ -1,0 +1,33 @@
+<ion-view view-title="Memories">
+  <ion-content>
+    <div class="cards" ng-controller="HomeMapCtrl">
+      <div class="mem-page-title">
+        List of my {{memoryList.length}} memories.  
+      </div>
+<div class="card-container">
+   <div class="item item-divider memory-card-header">
+     {{memoryList[0][0]}}
+   </div>
+   <div class="item item-text-wrap memory-card-text">
+     {{memoryList[0][3]}} <!--These will be automated, need some backend to pull from though.  Hard-coding for now.-->
+    </div>
+
+       <div class="item item-divider memory-card-header">
+     {{memoryList[1][0]}}
+   </div>
+       <div class="item item-text-wrap memory-card-text">
+     {{memoryList[1][3]}} <!--These will be automated, need some backend to pull from though.  Hard-coding for now.-->
+     <img src="img\shorts.jpg" alt="">
+    </div>
+       <div class="item item-divider memory-card-header">
+     {{memoryList[2][0]}}
+   </div>
+       <div class="item item-text-wrap memory-card-text">
+     {{memoryList[2][3]}} <!--These will be automated, need some backend to pull from though.  Hard-coding for now.-->
+     <img src="img\maclean.jpg" alt="" id="maclean" width="300" height="231">
+    </div>
+</div>
+
+
+  </ion-content>
+</ion-view>

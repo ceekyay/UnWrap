@@ -1,0 +1,40 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 id="memModalTitle" class="title">Create New Memory</h1>
+    <div class="buttons">
+      <button class="button button-dark"" ng-click="closeMemModal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content ng-controller="HomeMapCtrl">
+                            <!--****MEMORY TITLE****:  -->
+    <div class="div-mem-title">
+      
+      <label class="item item-input" id="mem-title">
+        <input ng-model="memoryTitle" type="text" placeholder="Enter Memory title" style="text-align:center;" >
+      </label>
+    </div>
+                                    <!--END  -->
+
+  <div class="photo-button">
+    <button class="button button-dark" ng-click="takePhoto()"> Take Photo</button>
+  </div>
+
+    <div class="photo-button">
+    <button class="button button-dark" ng-click="openPhoto()"> Open Photo</button>
+  </div>
+  <div class="selected-image-class">
+    <img id="selected-image" data-ng-src="{{imgURI}}" />
+  </div>
+                   <!--****MESSAGE FIELD AS FOOTER: ID="messageField"****:  -->
+<div id="messageField" class="bar bar-footer">
+      <!--Message Field Label: ID="messageLabel" -->
+      <label id="messageLabel" class="item item-input">
+        <input type="text" placeholder="Type your message here">
+      </label>
+      <button class="button button-dark pull-right">
+        Push
+       </button>
+  </div>
+                        <!--MESSAGE FIELD END:  -->
+  </ion-content>
+</ion-modal-view>
